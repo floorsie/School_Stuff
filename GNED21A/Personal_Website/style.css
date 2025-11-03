@@ -1,0 +1,280 @@
+/*hope your eyes burn, bitch*/
+
+body{
+    margin: 0;
+    background-color: #7b011b;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.index_bg {
+    position: fixed; /* so it stays fixed behind */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: url('https://img.freepik.com/free-photo/close-up-wild-animal-nature_23-2151853163.jpg?semt=ais_hybrid&w=740&q=80') no-repeat center center / cover;
+    background-attachment: fixed;
+    z-index: -1; /* put behind everything */
+}
+
+.interests_bg {
+    position: fixed; /* so it stays fixed behind */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: url('https://i.pinimg.com/originals/49/fb/25/49fb25d2e5648922c05d154b8500b2eb.jpg') no-repeat center center / cover;
+    background-attachment: fixed;
+    z-index: -1; /* put behind everything */
+}
+
+.portfolio_bg {
+    position: fixed; /* so it stays fixed behind */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: url('https://media.istockphoto.com/id/1438085645/photo/biggs-orca-whale-jumping-out-of-the-sea-in-vancouver-island-canada.jpg?s=612x612&w=0&k=20&c=XlGY9lg7OjExLeU6sUb4gyqnw6LDTGaxzlOc0aIpdIU=') no-repeat center center / cover;
+    background-attachment: fixed;
+    z-index: -1; /* put behind everything */
+}
+
+.resume_bg {
+    position: fixed; /* so it stays fixed behind */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: url('https://www.thoughtco.com/thmb/JLrfh7xjQM3bBGCQUaZhgNuEcok=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/GettyImages-595710436-e9fb5588826f403193ff399bcc8c0d3d.jpg') no-repeat center center / cover;
+    background-attachment: fixed;
+    z-index: -1; /* put behind everything */
+}
+
+
+.family_bg {
+    position: fixed; /* so it stays fixed behind */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: url('https://images.pexels.com/photos/5045962/pexels-photo-5045962.jpeg?cs=srgb&dl=pexels-hwmedia-5045962.jpg&fm=jpg') no-repeat center center / cover;
+    background-attachment: fixed;
+    z-index: -1; /* put behind everything */
+}
+
+.index_bg::after {
+    content: "";
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background-color: rgba(123, 1, 27, 0.5);
+    z-index: 1; 
+}
+
+.interests_bg::after {
+    content: "";
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background-color: rgba(123, 1, 27, 0.5);
+    z-index: 1;
+}
+
+.portfolio_bg::after {
+    content: "";
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background-color: rgba(123, 1, 27, 0.5);
+    z-index: 1; 
+}
+
+.resume_bg::after {
+    content: "";
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background-color: rgba(123, 1, 27, 0.5);
+    z-index: 1; 
+}
+
+.family_bg::after {
+    content: "";
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background-color: rgba(123, 1, 27, 0.5);
+    z-index: 1;
+}
+
+.header {
+    text-align: center;
+    color: rgb(255, 255, 255);
+    margin-top: 5rem; /* adjust as needed */
+    margin-bottom: 2rem; /* spacing below */
+    text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.3);
+}
+
+.header h5 {
+  color: rgb(255, 255, 255);
+}
+
+.navbar {
+  position: sticky;
+  width: 100%;
+  top: 0;
+  overflow: hidden;
+  background-color: #ff0037;
+  z-index: 1000;
+  box-shadow: 0 4px 20px #ff0037;
+}
+
+.navbar button {
+    width: 150px;
+    float: left;
+    display: block;
+    color:#ffffff;
+    padding: 20px;
+    border: none;
+    background-color: #ff0037;
+}
+
+.navbar button:hover {
+    color: #7b011b;
+    background-color: rgb(255, 255, 255);
+    font-weight: bold;
+    z-index: 3;
+    box-shadow: 0 0 20px #ffffff;
+}
+
+.info_box {
+  display: flex;
+  flex-direction: column;   /* stack header, table, caption */
+  align-items: center;      /* center children horizontally */
+  justify-content: center;
+  width: 80%;
+  max-width: 1200px;
+  padding: 16px;
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 4px 4px 20px rgba(255, 255, 255);
+  margin: 0 auto 3rem auto;
+  text-align: center;
+}
+
+.content{
+  width: 100%;
+  margin: 0 auto;
+  color: #7b011b;
+}
+
+.text_content{
+    margin-top: 0;
+    margin: 0 auto;
+    width: fit-content;
+    color: #7b011b;
+    text-align: center;
+
+}
+
+.tbl-box {
+  display: inline-block;
+  width: 150px;
+  height: 150px;
+  border-radius: 10px;
+  margin: 10px;
+  position: relative;
+  overflow: visible;
+
+}
+
+.tbl-box img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 10px;
+  display: block;
+}
+
+.color-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  text-shadow: 1px 1px 2px rgba(0,0,0,0.3);
+  font-size: 16px;
+  text-align: center;
+}
+
+.text_content h2{
+  margin-top: -20px;
+  margin-bottom: -5px;
+  font-weight: lighter;
+}
+
+.table table {
+  margin: 0 auto;       /* centers the table horizontally */
+  border-collapse: collapse;
+}
+
+.table {
+  display: flex;
+  justify-content: center;
+  gap: 24px; 
+}
+
+.text_content p{
+  margin-top: -5px;
+  margin-bottom: 50px;
+}
+
+.item-lbl {
+  margin-top: 8px;
+  color: #7b011b; /* deep red from your theme */
+  font-size: 16px;
+  font-weight: 600;
+  text-align: center;
+  z-index: 1; /* ensure it’s above the image if overlapping */
+}
+
+.butt-link{
+    width: 120px;   
+    display: block;
+    color:#ffffff;
+    padding: 20px;
+    border: none;
+    background-color: #ff0037;
+    border-radius: 10px;
+    box-shadow: 4px 4px 20px #ff0037;
+    margin: 10px;
+}
+
+.butt-link:hover{
+  color: #7b011b;
+  background-color: #ffa0b4;
+  font-weight: bold;
+}
+
+.tbl-box-f {
+  display: inline-block;
+  width: 300px;
+  height: 300px;
+  border-radius: 10px;
+  margin: 10px;
+  position: relative;
+  overflow: visible;
+
+}
+
+.tbl-box-f img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 10px;
+  display: block;
+}
+
+#fam-image{
+  width: 50%;
+  border-radius: 10px;
+}
+
+.table p{
+  margin-top: -5px;
+}
